@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.title('difficult :face_with_spiral_eyes:')
+st.title('ㅋㅋ :face_with_spiral_eyes:')
 
 
 
