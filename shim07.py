@@ -3,8 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.title(':red[HAPPY]')
-st.title(':orange[NEW YEAR]')
+st.title('difficult :face_with_spiral_eyes:')
 
 
 
