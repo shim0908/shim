@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 st.title(':red[HAPPY]')
-st.title(':orange[NEW] yellow[YEAR]')
+st.title(':orange[NEW]' ':yellow[YEAR]')
 
 
 
