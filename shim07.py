@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 st.title(':red[HAPPY]')
-st.title('A title with _italics_ :blue[colors] and emojis :smile:')
+st.title(':orange[NEW] :yellow[YEAR]')
 
 
 
