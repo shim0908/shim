@@ -5,7 +5,7 @@ import streamlit as st
 
 st.title('dizzy :face_with_spiral_eyes:')
 
-
+st.sidebar.success("Select a demo above.")
 
 
 money = pd.read_csv("money_data7.csv")
