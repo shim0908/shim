@@ -10,7 +10,13 @@ st.title('dizzy :face_with_spiral_eyes:')
 # st.sidebar.success("Select a demo above.")
 
 def  plotting_demo():
-    money = pd.read_csv("money_data7.csv")
+    
+    uploaded_file = st.file_uploader("Choose a file")
+
+    money=pd.read_csv(uploaded_file)
+    
+   
+    #money = pd.read_csv("money_data7.csv")
 
 
     option = st.selectbox(
@@ -57,7 +63,10 @@ with st.form(key ='Form1'):
         
         
 if select_language =='line graph':        
-    plotting_demo()           
+    try:
+        plotting_demo()  #에러가 안나면 이거 실행         
+    except:
+        pass             #에러 나면 이거 실행
 
 
 
