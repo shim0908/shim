@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
+from PIL import Image
+  image = Image.open('img.jpg')
 #st.title("EDA Package")
 
 def  plotting_demo():
@@ -92,6 +93,14 @@ def bar_chart():
 
 st.set_page_config(layout="centered")        
 st.title("EDA Package")
+from PIL import Image
+image = Image.open('img.jpg')
+st.image(image)
+
+
+
+
+
 
 with st.form(key ='Form1'):
     with st.sidebar:
