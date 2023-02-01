@@ -63,7 +63,7 @@ def bar_chart():
         
     baseball = df    
 
-    baseball.팀.replace({'두산':'Dusan','삼성':'SS','키움':'KU','한화': 'HH','롯데':'Lotte','넥센':'NecSen'}, inplace=True)
+    baseball.팀.replace({'두산':'DS','삼성':'SS','키움':'KU','한화':'HH','롯데':'LT','넥센':'NX'}, inplace=True)
     
     option = st.selectbox(
         'How would you like to choice year ?',
@@ -94,7 +94,7 @@ def bar_chart():
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        select_language = st.sidebar.radio('What do you want ?', ('금리-집값 상관관계', '야구 순위/승률', '기타'))
         
         
 if select_language =='line':           
