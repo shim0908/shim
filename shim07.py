@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title('EDA Package :face_with_spiral_eyes:')
+#st.title('EDA Package :face_with_spiral_eyes:')
 
 def  plotting_demo():
     
