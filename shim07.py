@@ -12,7 +12,7 @@ def  plotting_demo():
     money = pd.read_csv("money_data7.csv")
 
     option = st.selectbox(
-        'How would you like to choice year ?',
+        '년도',
         ('2020', '2021', '2022'))
 
     option2 = int(option)
@@ -66,7 +66,7 @@ def bar_chart():
     baseball.팀.replace({'두산':'DS','삼성':'SS','키움':'KU','한화':'HH','롯데':'LT','넥센':'NX'}, inplace=True)
     
     option = st.selectbox(
-        'How would you like to choice year ?',
+        '년도',
         ('2015', '2016','2017', '2018', '2019', '2020', '2021', '2022'))
 
     option2 = option
