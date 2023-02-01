@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
-image = Image.open('img2.jpg')
+
 
 
 def  plotting_demo():
@@ -94,7 +94,7 @@ def bar_chart():
 st.set_page_config(layout="centered")        
 #st.title("EDA Package")
 from PIL import Image
-image = Image.open('img.jpg')
+image = Image.open('img2.jpg')
 st.image(image)
 
 
