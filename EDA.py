@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
-  image = Image.open('img.jpg')
+image = Image.open('img.jpg')
 #st.title("EDA Package")
 
 def  plotting_demo():
