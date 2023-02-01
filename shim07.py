@@ -97,14 +97,14 @@ with st.form(key ='Form1'):
         select_language = st.sidebar.radio('What do you want ?', ('금리-집값 상관관계', '야구 순위/승률', '기타'))
         
         
-if select_language =='line':           
+if select_language =='금리-집값 상관관계':           
     try:
           plotting_demo()  
     except:      
           pass
 
         
-elif select_language =='bar':
+elif select_language =='야구 순위/승률':
     bar_chart()
 
 
