@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title("EDA Package")
+#st.title("EDA Package")
 
 def  plotting_demo():
     
