@@ -81,7 +81,7 @@ def bar_chart():
     y = df7.승률
     
     global bb
-    bb = money
+    bb = baseball
     
     fig, ax = plt.subplots(figsize=(12,8))
 
