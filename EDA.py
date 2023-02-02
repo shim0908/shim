@@ -106,11 +106,11 @@ st.image(image)
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language =  st.sidebar.radio('데이터 분석 결과', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른 데이터 분석'))
+        select_language =  st.sidebar.radio('Data&Chart', ('💲📈📉🏠', '⚾🏆', '🤷‍♂️'))
         
 
         
-if select_language =='금리와 집값 빠르게 파악하기':  
+if select_language =='💲📈📉🏠':  
     tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
    
     with tab1:
@@ -123,7 +123,7 @@ if select_language =='금리와 집값 빠르게 파악하기':
   
 
         
-if select_language =='야구 순위와 승률 빠르게 파악하기':
+if select_language =='⚾🏆':
     tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
    
     with tab1:
