@@ -96,7 +96,8 @@ def bar_chart():
     #st.dataframe(df7)        
 
 
-st.set_page_config(layout="centered")        
+st.set_page_config(layout="centered")     
+st.title("SHIM's Analystic🧐")
 from PIL import Image
 image = Image.open('img2.jpg')
 st.image(image)
