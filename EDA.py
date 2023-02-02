@@ -10,7 +10,7 @@ def  plotting_demo():
 
     #money=pd.read_csv(uploaded_file)
     money = pd.read_csv("money_data7.csv")
-    money = pd.DataFrame(np.random.randn(10,5))
+    money = pd.DataFrame(np.random.randn(10,5), columns=('col %d' % i for in range(5)))
     option = st.selectbox(
         '년도',
         ('2020', '2021', '2022'))
@@ -98,10 +98,11 @@ def bar_chart():
 
 st.set_page_config(layout="centered")     
 st.title("SHIM's Analystic🧐")
+st.table(money)
 from PIL import Image
 image = Image.open('img3.jpg')
 st.image(image)
-st.table(money)
+
 
 with st.form(key ='Form1'):
     with st.sidebar:
