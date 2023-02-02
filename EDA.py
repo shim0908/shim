@@ -2,17 +2,19 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from PIL import Image
+
 
 
 def  plotting_demo():
     
-    #uploaded_file = st.file_uploader("Choose a file")
-
-    #money=pd.read_csv(uploaded_file)
+    uploaded_file = st.file_uploader("Choose a file")
+        
+   #money=pd.read_csv(uploaded_file)
     money = pd.read_csv("money_data7.csv")
 
     option = st.selectbox(
-        'How would you like to choice year ?',
+        '년도',
         ('2020', '2021', '2022'))
 
     option2 = int(option)
@@ -20,10 +22,6 @@ def  plotting_demo():
     st.write('You selected:', option)
 
     money = money[:] [money['A_YEAR']== option2]
-    
-    global  aa
-    
-    aa = money
 
     fig, ax = plt.subplots(2,2, figsize=(12,8))
 
@@ -49,12 +47,12 @@ def  plotting_demo():
     plt.title('House Price')
 
     st.pyplot(fig)
-    #st.dataframe(money)
+    st.dataframe(money)
        
-        
+
 def bar_chart():
 
-    url = " https://sports.news.naver.com/kbaseball/record/index?category=kbo&year= "
+    url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
 
     years = ['2015', '2016','2017', '2018', '2019', '2020', '2021', '2022' ]
 
@@ -67,10 +65,10 @@ def bar_chart():
         
     baseball = df    
 
-    baseball.팀.replace({'두산':'Dusan','삼성':'SS','키움':'KU','한화': 'HH','롯데':'Lotte','넥센':'NecSen'}, inplace=True)
+    baseball.팀.replace({'두산':'DS','삼성':'SS','키움':'KU','한화':'HH','롯데':'LT','넥센':'NX', 'kt':'KT'}, inplace=True)
     
     option = st.selectbox(
-        'How would you like to choice year ?',
+        '년도',
         ('2015', '2016','2017', '2018', '2019', '2020', '2021', '2022'))
 
     option2 = option
@@ -94,26 +92,28 @@ def bar_chart():
     st.dataframe(df7)
 
 st.set_page_config(layout="centered")        
+#st.title("EDA Package")
+from PIL import Image
+image = Image.open('img2.jpg')
+st.image(image)
+
+
+
+
+
 
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language =  st.sidebar.radio('데이터 분석 결과', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른 데이터 분석'))
+        select_language = st.sidebar.radio('What do you want ?', ('금리-집값 상관관계', '야구 순위/승률', '기타'))
         
+        
+if select_language =='금리-집값 상관관계':           
+    try:
+          plotting_demo()  
+    except:      
+          pass
 
         
-if select_language =='금리와 집값 빠르게 파악하기':  
-    tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
-   
-    with tab1:
-        tab1.subheader("A tab with a chart")
-        plotting_demo()
-        
-    with tab2:
-        tab2.subheader("A tab with the data")
-        st.dataframe(aa)
-  
-
-        
-elif select_language =='야구 순위와 승률 빠르게 파악하기':
+elif select_language =='야구 순위/승률':
     bar_chart()
