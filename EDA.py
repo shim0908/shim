@@ -99,7 +99,7 @@ def bar_chart():
 st.set_page_config(layout="centered")     
 st.title("SHIM's Analystic🧐")
 from PIL import Image
-image = Image.open('img2.jpg')
+image = Image.open('img3.jpg')
 st.image(image)
 
 
