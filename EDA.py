@@ -20,6 +20,7 @@ def  plotting_demo():
     st.write('You selected:', option)
 
     money = money[:] [money['A_YEAR']== option2]
+    st.money(200,100)
     
     global  aa
     
