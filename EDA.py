@@ -44,7 +44,7 @@ def  plotting_demo():
     plt.title('Kospi Rate')
 
     plt.subplot(224)
-    plt.plot(  list( money['A_MONTH'] ), list( money['HOUSE_PRICE'] ), color='lemonchiffon' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['HOUSE_PRICE'] ), color='gold' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('House Price')
 
