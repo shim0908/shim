@@ -24,6 +24,7 @@ def  plotting_demo():
     money = money[:] [money['A_YEAR']== option2]
     
     global aa
+    
     aa = money
     
     fig, ax = plt.subplots(2,2, figsize=(12,8))
@@ -111,8 +112,8 @@ with st.form(key ='Form1'):
         select_language = st.sidebar.radio('What do you want ?', ('금리-집값 상관관계', '야구 순위/승률', '기타'))
         
         
-if select_language =='금리-집값 상관관계':           
-    tab1, tab2 = st.tabs("Chart","Data")
+if select_language =='금리와 집값 빠르게 파악하기':           
+    tab1, tab2 = st.tabs(["Chart","Data"])
     
     with tab1:
         tab1.subheader("A tab with a chart")
