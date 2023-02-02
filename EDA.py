@@ -101,7 +101,7 @@ st.title("SHIM's Analystic🧐")
 from PIL import Image
 image = Image.open('img3.jpg')
 st.image(image)
-st.dataframe(data=None, width=None, height=None, *, use_container_width=False)
+
 
 with st.form(key ='Form1'):
     with st.sidebar:
