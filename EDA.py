@@ -106,7 +106,7 @@ st.image(image)
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language =  st.sidebar.radio('Data&Chart', ('💲📈📉🏠', '⚾🏆', '🤷‍♂️'))
+        select_language =  st.sidebar.radio('🖥', ('💲📈📉🏠', '⚾🏆', '🤷‍♂️'))
         
 
         
