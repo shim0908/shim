@@ -85,7 +85,7 @@ def bar_chart():
     
     fig, ax = plt.subplots(figsize=(12,8))
 
-    colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
+    colors = ['C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17' ,'C18', 'C19', 'C20' ]
     plt.bar(  x,  y,  color= colors ) 
 
     for   num ,   v    in   enumerate( y ):
